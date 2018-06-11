@@ -8,8 +8,9 @@ import * as actions from '../actions';
 class Home extends Component {
 
   handleSearchbarSubmit = function(query) {
-    this.props.fetchPostsWithQuery(query);
-    this.props.history.push('/results');
+    this.props.fetchPostsWithQuery(query, () => {
+      this.props.history.push('/results');
+    });
 }
 
   render() {
