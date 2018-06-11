@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { createStore, applyMiddleware } from 'redux';
+import { createStore, applyMiddleware, compose } from 'redux';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import reducers from './reducers';
 import thunk from 'redux-thunk';
 
-const createStoreWithMiddleware = applyMiddleware(thunk)(createStore);
+const createStoreWithMiddleware = applyMiddleware(thunk)(compose((window.devToolsExtension ? window.devToolsExtension() : f=> F)(createStore)));
 
 import 'bootstrap/dist/css/bootstrap.css';
 import './style/main.scss';
