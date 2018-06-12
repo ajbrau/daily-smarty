@@ -14,9 +14,9 @@ handleSearchbarSubmit(query) {
 
     render() {
         return (
-            <div>
+            <div className="results">
                 <Logo size={55}/>
-                <SearchBar onSubmit={(query) => this.handleSearchbarSubmit(query)}/>
+                <SearchBar page="results" onSubmit={(query) => this.handleSearchbarSubmit(query)}/>
                 <ResultsPosts />
             </div>
         );
