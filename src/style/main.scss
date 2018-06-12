@@ -19,3 +19,8 @@ body {
     display: grid;
     justify-content: center;
 }
+
+$color-grey-one: #666666;
+$color-grey-two: #b3b3b3;
+
+@import './searchBar'
