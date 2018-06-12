@@ -45,13 +45,17 @@
     }
     .result-post_links {
         display: flex;
-
+        
+        height: 70px;
+        
     }
 }
 
 .post-link {
     min-height: 70px;
     display: flex;
+    flex-basis: 207px;
+    margin-right: 37px;
     .post-link_box {
         min-width: 70px;
         background-color: $color-grey-two;
@@ -61,5 +65,7 @@
         color: $color-grey-one;
         font-size: 14px;
         line-height: 17px;
+        // margin-right: 10px;
+        // word-wrap: unset;
     }
 }

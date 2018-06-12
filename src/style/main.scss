@@ -1,4 +1,7 @@
 @import './mixins';
+$color-grey-one: #666666;
+$color-grey-two: #b3b3b3;
+$color-blue-one: #0079ff;
 
 body {
     font-family: 'Lato', sans-serif;
@@ -28,9 +31,11 @@ ul {
     list-style-type: none;
 }
 
-$color-grey-one: #666666;
-$color-grey-two: #b3b3b3;
-$color-blue-one: #0079ff;
+.no-content {
+    color: $color-grey-one;
+}
+
+
 
 
 @import './searchBar';
